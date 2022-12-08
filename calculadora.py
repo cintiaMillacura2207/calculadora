@@ -139,6 +139,16 @@ boton_tangente=Button(marco,text="tan",command=tangente)
 boton_tangente.grid(row=3,column=4,sticky=W+E,pady=1,padx=1)
 boton_tangente.config(width=5,height=2, bg="green",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton potencia
+boton_Pot=Button(marco,text="^",command=potencia)
+boton_Pot.grid(row=3,column=0,sticky=W+E,pady=1,padx=1)
+boton_Pot.config(width=5,height=2, bg="green",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton raiz
+boton_raiz=Button(marco,text="√",command=raiz)
+boton_raiz.grid(row=3,column=1,sticky=W+E,pady=1,padx=1)
+boton_raiz.config(width=5,height=2, bg="green",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
 #Boton punto 
 boton_Punto=Button(marco,text=".",command=lambda:envia_boton())
 boton_Punto.grid(row=7,column=0,sticky=W+E,pady=1,padx=1)
