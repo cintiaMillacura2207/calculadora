@@ -94,6 +94,10 @@ boton_Div=Button(marco,text="/",command=division)
 boton_Div.grid(row=7,column=4,sticky=W+E,pady=1,padx=1)
 boton_Div.config(width=5,height=2, bg="lightblue",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton flecha
+boton_Borrar=Button(marco,text="←",command=borrar_uno)
+boton_Borrar.grid(row=4,column=3,sticky=W+E,pady=1,padx=1)
+boton_Borrar.config(width=5,height=2, bg="red",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
 
 
