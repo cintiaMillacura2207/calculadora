@@ -107,6 +107,37 @@ def borrar_Datos():
     operacion = "M-"
     return datos
 
+def media():
+   global operacion
+   global datos
+   pantalla.delete(0,END)
+   operacion = "X"
+
+def mediana():
+   global operacion
+   global datos
+   pantalla.delete(0,END)
+   operacion = "Me"
+
+def moda():
+   global operacion
+   global datos
+   pantalla.delete(0,END)
+   operacion = "Mo"
+
+def varianza():
+   global operacion
+   global datos
+   pantalla.delete(0,END)
+   operacion = "σ2"
+
+def desviacion_estandar():
+   global operacion
+   global datos
+   pantalla.delete(0,END)
+   operacion = "σ"
+
+
 
 root=Tk()
 root.resizable(0,0)
