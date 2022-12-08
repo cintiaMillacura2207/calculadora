@@ -99,6 +99,29 @@ boton_Borrar=Button(marco,text="←",command=borrar_uno)
 boton_Borrar.grid(row=4,column=3,sticky=W+E,pady=1,padx=1)
 boton_Borrar.config(width=5,height=2, bg="red",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton varianza
+boton_Varianza=Button(marco,text="σ2",command=varianza)
+boton_Varianza.grid(row=2,column=3,sticky=W+E,pady=1,padx=1)
+boton_Varianza.config(width=5,height=2, bg="orange",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton desviacion estandar
+boton_Desviacion=Button(marco,text="σ",command=desviacion_estandar)
+boton_Desviacion.grid(row=2,column=4,sticky=W+E,pady=1,padx=1)
+boton_Desviacion.config(width=5,height=2, bg="orange",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton media
+boton_Media=Button(marco,text="X",command=media)
+boton_Media.grid(row=2,column=0,sticky=W+E,pady=1,padx=1)
+boton_Media.config(width=5,height=2, bg="orange",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton moda
+boton_Moda=Button(marco,text="Mo",command=moda)
+boton_Moda.grid(row=2,column=2,sticky=W+E,pady=1,padx=1)
+boton_Moda.config(width=5,height=2, bg="orange",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton mediana
+boton_Media=Button(marco,text="Me",command=mediana)
+boton_Media.grid(row=2,column=1,sticky=W+E,pady=1,padx=1)
+boton_Media.config(width=5,height=2, bg="orange",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
 root.mainloop()
