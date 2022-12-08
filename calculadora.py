@@ -159,5 +159,9 @@ boton_igual=Button(marco,text="=",command=igual)
 boton_igual.grid(row=8,column=0,columnspan=3,sticky=W+E,pady=1,padx=1)
 boton_igual.config(width=5,height=2, bg="black",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton carga datos
+boton_datos=Button(marco,text="CargarDatos",command=lambda:cargar_datos())
+boton_datos.grid(row=8,column=3,columnspan=3,sticky=W+E,pady=1,padx=1)
+boton_datos.config(width=5,height=2, bg="gold2",fg="black",font=("Arial",10),cursor="hand2",borderwidth=3, relief="ridge")
 
 root.mainloop()
