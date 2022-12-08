@@ -57,5 +57,22 @@ boton_0=Button(marco,text="0",command=lambda:envia_boton(0))
 boton_0.grid(row=7,column=1,columnspan=2,sticky=W+E,pady=1,padx=1)
 boton_0.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#BUTTONS OPERACIONES
+
+#Boton borrar
+boton_AC=Button(marco,text="AC",command=borrar)
+boton_AC.grid(row=4,column=4,sticky=W+E,pady=1,padx=1)
+boton_AC.config(width=5,height=2, bg="red",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton M+
+boton_M=Button(marco,text="M+",command=cargar_datos)
+boton_M.grid(row=5,column=4,sticky=W+E,pady=1,padx=1)
+boton_M.config(width=5,height=2, bg="red",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton M-
+boton_B=Button(marco,text="M-",command=borrar_Datos)
+boton_B.grid(row=5,column=3,sticky=W+E,pady=1,padx=1)
+boton_B.config(width=5,height=2, bg="black",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
 
 root.mainloop()
