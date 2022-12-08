@@ -15,4 +15,47 @@ pantalla.grid(row=0,columnspan=5,sticky=W+E,pady=5,padx=3)
 pantalla.config(bg="lightblue",fg="black",width=30,font=("Arial",18,'bold'),borderwidth=2,relief="solid",
                justify=RIGHT)
 
+#BUTTONS NUMEROS
+
+boton_1=Button(marco,text="1",command=lambda:envia_boton(1))
+boton_1.grid(row=6,column=0,sticky=W+E,pady=1,padx=1)
+boton_1.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_2=Button(marco,text="2",command=lambda:envia_boton(2))
+boton_2.grid(row=6,column=1,sticky=W+E,pady=1,padx=1)
+boton_2.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_3=Button(marco,text="3",command=lambda:envia_boton(3))
+boton_3.grid(row=6,column=2,sticky=W+E,pady=1,padx=1)
+boton_3.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_4=Button(marco,text="4",command=lambda:envia_boton(4))
+boton_4.grid(row=5,column=0,sticky=W+E,pady=1,padx=1)
+boton_4.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_5=Button(marco,text="5",command=lambda:envia_boton(5))
+boton_5.grid(row=5,column=1,sticky=W+E,pady=1,padx=1)
+boton_5.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_6=Button(marco,text="6",command=lambda:envia_boton(6))
+boton_6.grid(row=5,column=2,sticky=W+E,pady=1,padx=1)
+boton_6.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_7=Button(marco,text="7",command=lambda:envia_boton(7))
+boton_7.grid(row=4,column=0,sticky=W+E,pady=1,padx=1)
+boton_7.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_8=Button(marco,text="8",command=lambda:envia_boton(8))
+boton_8.grid(row=4,column=1,sticky=W+E,pady=1,padx=1)
+boton_8.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_9=Button(marco,text="9",command=lambda:envia_boton(9))
+boton_9.grid(row=4,column=2,sticky=W+E,pady=1,padx=1)
+boton_9.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+boton_0=Button(marco,text="0",command=lambda:envia_boton(0))
+boton_0.grid(row=7,column=1,columnspan=2,sticky=W+E,pady=1,padx=1)
+boton_0.config(width=5,height=2, bg="yellow",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+
 root.mainloop()
