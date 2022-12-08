@@ -137,6 +137,12 @@ def desviacion_estandar():
    pantalla.delete(0,END)
    operacion = "σ"
 
+def borrar():
+    pantalla.delete(0, END)
+
+def borrar_uno():
+    largo = len(pantalla.get())
+    pantalla.delete(largo-1, END)
 
 
 root=Tk()
