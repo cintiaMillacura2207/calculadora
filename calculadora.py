@@ -124,4 +124,15 @@ boton_Media=Button(marco,text="Me",command=mediana)
 boton_Media.grid(row=2,column=1,sticky=W+E,pady=1,padx=1)
 boton_Media.config(width=5,height=2, bg="orange",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton punto 
+boton_Punto=Button(marco,text=".",command=lambda:envia_boton())
+boton_Punto.grid(row=7,column=0,sticky=W+E,pady=1,padx=1)
+boton_Punto.config(width=5,height=2, bg="blue",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton igual
+boton_igual=Button(marco,text="=",command=igual)
+boton_igual.grid(row=8,column=0,columnspan=3,sticky=W+E,pady=1,padx=1)
+boton_igual.config(width=5,height=2, bg="black",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+
 root.mainloop()
