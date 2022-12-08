@@ -144,6 +144,102 @@ def borrar_uno():
     largo = len(pantalla.get())
     pantalla.delete(largo-1, END)
 
+def igual():
+    global num1
+    global num2
+    num2 = pantalla.get()
+    pantalla.delete(0, END)
+
+    if operacion == "+":
+        pantalla.insert(0, num1 + float(num2))    
+    
+    elif operacion == "-":
+        pantalla.insert(0, num1 - float(num2))
+    
+    elif operacion == "*":
+        pantalla.insert(0, num1 * float(num2))
+    
+    elif operacion == "/":
+        try:
+            pantalla.insert(0, num1 / float(num2))
+        except:
+            pantalla.insert(0,"ERROR")
+    
+    elif operacion == "^":
+        i=1
+        num1=float(num1)
+        resultado=float(num1)
+        num2=float(num2)
+        while (i<num2):
+            resultado= resultado * num1
+            i=i+1
+        pantalla.insert(0, resultado )
+
+    elif operacion == "√":
+        num1=float(num1)
+        resultado=math.sqrt(num1)
+        pantalla.insert(0, resultado)
+    
+    elif operacion == "sin":
+        res=math.sin(num1)
+        pantalla.insert(0, res)
+    
+    elif operacion == "cos":
+        res=math.cos(num1)
+        pantalla.insert(0, res)
+    
+    elif operacion == "tan":
+        res=math.tan(num1)
+        pantalla.insert(0, res)
+    
+    elif operacion == "σ2":
+        if len(datos)>0:
+            print("la varianza es: ", statistics.variance(datos))   
+            pantalla.insert(0, statistics.variance(datos))
+        else:
+            pantalla.insert(0, "ERROR NO HAY DATOS CARGADOS")
+    
+    elif operacion == "σ":
+        if len(datos)>0: 
+            print("la desviacion estandar es: ", statistics.stdev(datos))  
+            pantalla.insert(0, statistics.stdev(datos))
+        else:
+            pantalla.insert(0, "ERROR NO HAY DATOS CARGADOS")
+    
+    elif operacion == "X":
+        if len(datos)>0:   
+            pantalla.insert(0, statistics.mean(datos))
+        else:
+            pantalla.insert(0, "ERROR NO HAY DATOS CARGADOS")
+    
+    elif operacion == "Mo":
+        if len(datos)>0:
+            #devuelve la mediana
+            print("la moda es: ", statistics.mode(datos))
+            pantalla.insert(0, statistics.mode(datos))
+        else:
+            pantalla.insert(0, "ERROR NO HAY DATOS CARGADOS")
+    
+    elif operacion == "Me":
+        if len(datos)>0:
+            #devuelve la mediana
+            print("la mediana es: ", statistics.median(datos))
+            pantalla.insert(0, statistics.median(datos))
+        else:
+            pantalla.insert(0, "ERROR NO HAY DATOS CARGADOS")
+    
+    elif operacion == "M-":    
+        if len(datos)==0:
+            pantalla.insert(0, "DATOS BORRADOS")
+    
+    elif operacion == "CargarDatos":    
+        if len(datos)>0:
+            pantalla.insert(0, datos)
+    
+    else:
+        pantalla.insert(0, "Presione Botones")
+
+
 
 root=Tk()
 root.resizable(0,0)
