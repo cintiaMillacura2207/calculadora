@@ -59,6 +59,31 @@ def raiz():
     pantalla.delete(0, END)
     operacion = "√"
 
+def seno():
+    global num1
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "sin"
+
+def coseno():
+    global num1
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "cos"
+
+def tangente():
+    global num1
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "tan"
+
+
 
 root=Tk()
 root.resizable(0,0)
