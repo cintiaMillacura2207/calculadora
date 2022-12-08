@@ -3,6 +3,12 @@ from tkinter import *
 global datos
 datos=[]
 
+def envia_boton(valor):
+   anterior = pantalla.get()
+   pantalla.delete(0, END)
+   pantalla.insert(0, str(anterior) + str(valor))
+
+
 root=Tk()
 root.resizable(0,0)
 root.config(bg="black")
