@@ -1,4 +1,6 @@
 from tkinter import *
+import math
+import statistics
 
 global datos
 datos=[]
