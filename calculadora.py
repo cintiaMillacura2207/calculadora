@@ -124,6 +124,21 @@ boton_Media=Button(marco,text="Me",command=mediana)
 boton_Media.grid(row=2,column=1,sticky=W+E,pady=1,padx=1)
 boton_Media.config(width=5,height=2, bg="orange",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton sin
+boton_seno=Button(marco,text="sin",command=seno)
+boton_seno.grid(row=3,column=2,sticky=W+E,pady=1,padx=1)
+boton_seno.config(width=5,height=2, bg="green",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton cos
+boton_coseno=Button(marco,text="cos",command=coseno)
+boton_coseno.grid(row=3,column=3,sticky=W+E,pady=1,padx=1)
+boton_coseno.config(width=5,height=2, bg="green",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton tangente
+boton_tangente=Button(marco,text="tan",command=tangente)
+boton_tangente.grid(row=3,column=4,sticky=W+E,pady=1,padx=1)
+boton_tangente.config(width=5,height=2, bg="green",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
 #Boton punto 
 boton_Punto=Button(marco,text=".",command=lambda:envia_boton())
 boton_Punto.grid(row=7,column=0,sticky=W+E,pady=1,padx=1)
