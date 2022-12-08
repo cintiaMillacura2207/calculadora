@@ -8,6 +8,57 @@ def envia_boton(valor):
    pantalla.delete(0, END)
    pantalla.insert(0, str(anterior) + str(valor))
 
+def suma():
+   global num1
+   global operacion
+   num1 = pantalla.get()
+   num1 = float(num1)
+   pantalla.delete(0,END)
+   operacion = "+"
+
+def resta():
+    global num1
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "-"
+
+def multiplicacion():
+    global num1
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "*"
+
+def division():
+    global num1
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "/"
+
+def potencia():
+    global num1
+    global num2
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "^"
+    num2 = pantalla.get()
+    num2 = float(num2)
+
+def raiz():
+    global num1
+    global operacion
+    num1 = pantalla.get()
+    num1 = float(num1)
+    pantalla.delete(0, END)
+    operacion = "√"
+
 
 root=Tk()
 root.resizable(0,0)
