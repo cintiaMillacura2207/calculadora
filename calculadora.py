@@ -83,6 +83,29 @@ def tangente():
     pantalla.delete(0, END)
     operacion = "tan"
 
+def cargar_datos():
+    global datos
+    global operacion
+    global num1
+    while True:
+        num1 = pantalla.get()
+        if num1.isdigit():
+            num1 = float(num1)
+            datos.append(num1)
+            pantalla.delete(0,END)
+        elif num1 != "=":
+            break
+        else: num1=="M+"
+    print(datos)
+    operacion = "CargarDatos"
+    return datos
+    
+def borrar_Datos():
+    global datos
+    global operacion
+    datos.clear()    
+    operacion = "M-"
+    return datos
 
 
 root=Tk()
