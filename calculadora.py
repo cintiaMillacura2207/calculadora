@@ -1,5 +1,7 @@
 from tkinter import *
 
+global datos
+datos=[]
 
 root=Tk()
 root.resizable(0,0)
