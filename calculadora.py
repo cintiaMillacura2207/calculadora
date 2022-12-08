@@ -74,5 +74,27 @@ boton_B=Button(marco,text="M-",command=borrar_Datos)
 boton_B.grid(row=5,column=3,sticky=W+E,pady=1,padx=1)
 boton_B.config(width=5,height=2, bg="black",fg="white",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
 
+#Boton suma
+boton_Suma=Button(marco,text="+",command=suma)
+boton_Suma.grid(row=6,column=3,sticky=W+E,pady=1,padx=1)
+boton_Suma.config(width=5,height=2, bg="lightblue",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton resta
+boton_Resta=Button(marco,text="-",command=resta)
+boton_Resta.grid(row=6,column=4,sticky=W+E,pady=1,padx=1)
+boton_Resta.config(width=5,height=2, bg="lightblue",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton multiplicacion
+boton_Mult=Button(marco,text="*",command=multiplicacion)
+boton_Mult.grid(row=7,column=3,sticky=W+E,pady=1,padx=1)
+boton_Mult.config(width=5,height=2, bg="lightblue",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+#Boton division
+boton_Div=Button(marco,text="/",command=division)
+boton_Div.grid(row=7,column=4,sticky=W+E,pady=1,padx=1)
+boton_Div.config(width=5,height=2, bg="lightblue",fg="black",font=("Arial",12),cursor="hand2",borderwidth=3, relief="ridge")
+
+
+
 
 root.mainloop()
